@@ -109,8 +109,12 @@ public class PostEntity extends AuditModel{
 
 	@Override
 	public String toString() {
-		return "Post [id=" + id + ", title=" + title + ", description=" + description + ", content=" + content
-				+ ", comments=" + comments + "]";
+		return "PostEntity [id=" + id + ", title=" + title + ", description=" + description + ", content=" + content
+				+ ", comments=" + comments + ", getId()=" + getId() + ", getTitle()=" + getTitle()
+				+ ", getDescription()=" + getDescription() + ", getContent()=" + getContent() + ", getComments()="
+				+ getComments() + ", getCreatedAt()=" + getCreatedAt() + ", getUpdatedAt()=" + getUpdatedAt()
+				+ ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()=" + super.toString()
+				+ "]";
 	}
 
 }

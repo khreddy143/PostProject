@@ -25,6 +25,15 @@ public class PostDto {
 
 	private Set<CommentDto> comments = new HashSet<>();
 
+	public PostDto(@NotEmpty @Size(max = 100) String title, @NotEmpty @Size(max = 250) String description,
+			@NotEmpty String content, Set<CommentDto> comments) {
+		super();
+		this.title = title;
+		this.description = description;
+		this.content = content;
+		this.comments = comments;
+	}
+
 	public Long getId() {
 		return id;
 	}

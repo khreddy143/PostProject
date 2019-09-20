@@ -79,7 +79,10 @@ public class CommentEntity extends AuditModel{
 
 	@Override
 	public String toString() {
-		return "Comment [id=" + id + ", text=" + text + ", post=" + post + "]";
+		return "CommentEntity [id=" + id + ", text=" + text + ", post=" + post + ", getId()=" + getId() + ", getText()="
+				+ getText() + ", getPost()=" + getPost() + ", getCreatedAt()=" + getCreatedAt() + ", getUpdatedAt()="
+				+ getUpdatedAt() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()="
+				+ super.toString() + "]";
 	}
 
 }
